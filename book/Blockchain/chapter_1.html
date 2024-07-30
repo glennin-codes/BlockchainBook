@@ -12,21 +12,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> Introduction </a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Blockchain/chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> Introduction </a></li><li class="chapter-item expanded "><a href="../Cryptocurrency.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -144,7 +144,7 @@
                     <h1 class="menu-title">Blockchain Made Easy</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -176,9 +176,20 @@
                         <h1 id="blockchain"><a class="header" href="#blockchain">Blockchain</a></h1>
 <p><em>In laymans language</em> :Blockchain is an ever-growing ,secure ,shared recordkeeping system in which each user of the data holds a copy of the records,which can only be updated if majority of the transaction agree to update.</p>
 <p><em>In Technical Defination</em> : Blockchain is a <code>peer to peer</code> ,<code>distrubuted ledger</code> that is <code>cryptographically secure</code>,<code>append-only</code>,immutable(extremely hard to chainge),and <code>updateable only via consensus</code> among peers.</p>
-<h3 id="key-wowrds"><a class="header" href="#key-wowrds">key wowrds</a></h3>
+<h3 id="key-words-to-note"><a class="header" href="#key-words-to-note">key words to note;</a></h3>
 <ol>
-<li><strong>Peer to Peer</strong> -<code> (P2P)</code> this means that there is no central controller in the network and all participants (nodes) talk to each other .This property allows transaction to be conducted directly among peers without involving a third party such as a bank. <code>(Dicentralisated)</code>.</li>
+<li>
+<p><strong>Peer to Peer</strong> -<code> (P2P)</code> this means that there is no central controller in the network and all participants (nodes) talk to each other .This property allows transaction to be conducted directly among peers without involving a third party such as a bank. <code>(Decentralisated)</code>.</p>
+</li>
+<li>
+<p><strong>Distributed Ledger</strong> : A ledger is expressed accross the network and each peer holds a copy of the complete ledger.</p>
+</li>
+<li>
+<p><strong>Cryptography secure</strong> : cryptography provide security that makes this ledger secure against tampering and misuse. These services include non-repudiation ,data integrity and data origin authentication.</p>
+</li>
+<li>
+<p><strong>Append only</strong> : This means that data can only be added to the blockchain in <code>time-sequential order</code> .This implies that data added to the blcokchain is imposible to change that data thus considered practicaly immutable.This allows it to be come tamper-proof ledger of transaction.</p>
+</li>
 </ol>
 
                     </main>
@@ -186,6 +197,9 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
+                            <a rel="next prefetch" href="../Cryptocurrency.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -194,10 +208,29 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
+                    <a rel="next prefetch" href="../Cryptocurrency.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
@@ -206,13 +239,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
