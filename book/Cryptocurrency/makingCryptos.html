@@ -174,7 +174,43 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="pimitives-for-making-cryptocurencies"><a class="header" href="#pimitives-for-making-cryptocurencies">Pimitives For Making Cryptocurencies</a></h1>
-<p>dhhjdhjsdh</p>
+<ul>
+<li>Hash function.</li>
+<li>Signature.</li>
+</ul>
+<h2 id="hash-function"><a class="header" href="#hash-function">Hash function.</a></h2>
+<p>You have some data of any size you run it into a hash function and produced an output of a fixed size.</p>
+<pre><code class="language-Rust">hash (data) -&gt; Output
+</code></pre>
+<p>"Avalanche effect" : change 1 bit of input ,about half the output bits should change.</p>
+<p>Genearly hash functions are defined onf what they shouldnt do.</p>
+<pre><code>1. Preimage resistance.
+2. 2nd Preimage resistance.
+3. Colission resistance.
+</code></pre>
+<p><strong>Preimage resistance</strong></p>
+<ul>
+<li>if your are given output <code>y</code> from a hash function that takes in data <code>x</code> .You cannot find <code>x</code>.
+where</li>
+</ul>
+<pre><code class="language-C">hash(x)==y
+</code></pre>
+<p>(You can find it eventualy but that will take 2^256 operations (10^78));</p>
+<p><strong>2nd Preimage resistance</strong></p>
+<ul>
+<li>if you have x,y such that</li>
+</ul>
+<pre><code class="language-py">hash(x) == y
+</code></pre>
+<p>you cannot find <code>x'</code> where</p>
+<pre><code class="language-js">  hash(x') == y
+</code></pre>
+<p>in that</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span> x!==x'
+<span class="boring">}</span></code></pre></pre>
+<p><strong>Colission resistance.</strong></p>
 
                     </main>
 
