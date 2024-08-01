@@ -43,5 +43,20 @@ hash(x)==y
  ```
 
 **Colission resistance.**
+  - nobody can find any x,z such that 
+   ``` rust
+     x != z
+  hash(x)==hash(Z)
+     ```
 
+( again, You can find them eventually.and in this case,not 2^256 but the square root of it.2^128 ).
+
+
+
+## Usages
+
+can be used for names.
+hashfunctions can be pointers.
+hashfunction can reference.
+hashfunctions are commitments.
 

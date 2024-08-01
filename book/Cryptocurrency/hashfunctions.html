@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Introduction </a></li><li class="chapter-item expanded "><a href="../Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Cryptocurrency/makingCryptos.html" class="active"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Introduction </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Blockchain/chapter_2.html"><strong aria-hidden="true">1.1.</strong> Proof Of Work</a></li></ol></li><li class="chapter-item expanded "><a href="../Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Cryptocurrency/hashfunctions.html" class="active"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li><li class="chapter-item expanded "><a href="../Cryptocurrency/signatures.html"><strong aria-hidden="true">2.2.</strong> Signatures</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -211,6 +211,27 @@ where</li>
 </span> x!==x'
 <span class="boring">}</span></code></pre></pre>
 <p><strong>Colission resistance.</strong></p>
+<ul>
+<li>nobody can find any x,z such that</li>
+</ul>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>  x != z
+hash(x)==hash(Z)
+  ```
+
+( again, You can find them eventually.and in this case,not 2^256 but the square root of it.2^128 ).
+
+
+
+# Usages
+
+can be used for names.
+hashfunctions can be pointers.
+hashfunction can reference.
+hashfunctions are commitments.
+
+<span class="boring">}</span></code></pre></pre>
 
                     </main>
 
@@ -220,6 +241,9 @@ where</li>
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
+                            <a rel="next prefetch" href="../Cryptocurrency/signatures.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -231,6 +255,9 @@ where</li>
                         <i class="fa fa-angle-left"></i>
                     </a>
 
+                    <a rel="next prefetch" href="../Cryptocurrency/signatures.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>

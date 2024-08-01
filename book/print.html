@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Introduction </a></li><li class="chapter-item expanded "><a href="Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Cryptocurrency/makingCryptos.html"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Introduction </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Blockchain/chapter_2.html"><strong aria-hidden="true">1.1.</strong> Proof Of Work</a></li></ol></li><li class="chapter-item expanded "><a href="Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Cryptocurrency/hashfunctions.html"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li><li class="chapter-item expanded "><a href="Cryptocurrency/signatures.html"><strong aria-hidden="true">2.2.</strong> Signatures</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -192,6 +192,21 @@
 <p><strong>Append only</strong> : This means that data can only be added to the blockchain in <code>time-sequential order</code> .This implies that data added to the blcokchain is imposible to change that data thus considered practicaly immutable.This allows it to be come tamper-proof ledger of transaction.</p>
 </li>
 </ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-work"><a class="header" href="#proof-of-work">Proof Of Work</a></h1>
+<p>Since The bank system can say no for some transactions to take place. So we want something that is decentralised .</p>
+<p>Thats where Digital token transfer comes in.</p>
+<p>But before we create our decentralised Digital token transfer there some potential problems  we need to solve.</p>
+<ol>
+<li>
+<p>Intercept transfer and steal funds.- we realy dont want that to happen.(security)</p>
+</li>
+<li>
+<p>Spend money without authorization.- We need to make sure that if its Alice doing the transaction she is realy her doing it.</p>
+</li>
+<li>
+<p>Double spending. -</p>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cryptocurrency"><a class="header" href="#cryptocurrency">Cryptocurrency</a></h1>
 <p><strong>Origin of Money</strong> :The origin of money cames about buy so many theories.The most of which we gonna talk about is the  <code>coincidence of wants</code> and something later happened.
 Before money was invented ,there goes Bob who has Maize but he needs Rice today for his supper.He goes by to Alice who has Rice but would need some Maize to feed  her chickens.So they will do barter.</p>
@@ -237,6 +252,28 @@ where</li>
 </span> x!==x'
 <span class="boring">}</span></code></pre></pre>
 <p><strong>Colission resistance.</strong></p>
+<ul>
+<li>nobody can find any x,z such that</li>
+</ul>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>  x != z
+hash(x)==hash(Z)
+  ```
+
+( again, You can find them eventually.and in this case,not 2^256 but the square root of it.2^128 ).
+
+
+
+# Usages
+
+can be used for names.
+hashfunctions can be pointers.
+hashfunction can reference.
+hashfunctions are commitments.
+
+<span class="boring">}</span></code></pre></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="signatures"><a class="header" href="#signatures">Signatures</a></h1>
 
                     </main>
 
