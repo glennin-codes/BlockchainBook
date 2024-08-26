@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Introduction </a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Blockchain/chapter_2.html"><strong aria-hidden="true">1.1.</strong> Proof Of Work</a></li></ol></li><li class="chapter-item expanded "><a href="Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Cryptocurrency/hashfunctions.html"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li><li class="chapter-item expanded "><a href="Cryptocurrency/signatures.html"><strong aria-hidden="true">2.2.</strong> Signatures</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Blockchain/chapter_1.html"><strong aria-hidden="true">1.</strong> Blockchain</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Blockchain/chapter_2.html"><strong aria-hidden="true">1.1.</strong> Proof Of Work</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Blockchain/Transaction.html"><strong aria-hidden="true">1.1.1.</strong> what is Blockchain Transaction</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="Cryptocurrency/index.html"><strong aria-hidden="true">2.</strong> Cryptocurrency</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Cryptocurrency/hashfunctions.html"><strong aria-hidden="true">2.1.</strong> Pimitives For Making Cryptocurencies</a></li><li class="chapter-item expanded "><a href="Cryptocurrency/signatures.html"><strong aria-hidden="true">2.2.</strong> Signatures</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -193,6 +193,25 @@
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="proof-of-work"><a class="header" href="#proof-of-work">Proof Of Work</a></h1>
+<ul>
+<li>
+<p>Is a consesus mechanism in blockchain Networks to secure and validate Transactions.</p>
+</li>
+<li>
+<p>Requires miners to solve complex mathematical  puzzle , which involve significant computational effort. Once a miner successfully solves the puzzle, they can propose the next block of transactions to be added to the blockchain, and they receive a reward for their work, typically in the form of cryptocurrency.</p>
+</li>
+</ul>
+<h2 id="key-features-of-proof-of-work"><a class="header" href="#key-features-of-proof-of-work">Key Features of Proof-of-Work:</a></h2>
+<p><strong>Computational Effort</strong>: Miners compete to solve a cryptographic puzzle that requires considerable computational power. The puzzle is difficult to solve but easy to verify once solved.</p>
+<p><strong>Security</strong>: PoW is designed to make it prohibitively expensive to alter the blockchain. To change any block, an attacker would need to redo the work for that block and all subsequent blocks, which requires an immense amount of computational resources.</p>
+<p><strong>Decentralization</strong>: No central authority is required to validate transactions, as consensus is achieved through the distributed network of miners.</p>
+<p><strong>Rewards</strong>: Miners are incentivized to participate through rewards (like Bitcoin), which are given when they successfully add a new block to the chain.</p>
+<p><strong>Example:</strong>
+Bitcoin, the first and most well-known cryptocurrency, uses Proof-of-Work as its consensus mechanism. The Bitcoin network adjusts the difficulty of the puzzle to ensure that a new block is mined approximately every 10 minutes, regardless of the number of miners or the total computational power on the network.</p>
+<h3 id="drawbacks-of-proof-of-work"><a class="header" href="#drawbacks-of-proof-of-work">Drawbacks of Proof-of-Work:</a></h3>
+<p>Energy Consumption: The process of solving the puzzles requires a large amount of electricity, leading to concerns about environmental impact.
+Centralization Risks: Over time, mining power may become concentrated in a few hands, leading to a form of centralization.
+Proof-of-Work is one of the most secure consensus mechanisms but has been criticized for its high energy usage and scalability issues, leading to the development of alternatives like Proof-of-Stake (PoS).</p>
 <p>Since The bank system can say no for some transactions to take place. So we want something that is decentralised .</p>
 <p>Thats where Digital token transfer comes in.</p>
 <p>But before we create our decentralised Digital token transfer there some potential problems  we need to solve.</p>
@@ -204,7 +223,26 @@
 <p>Spend money without authorization.- We need to make sure that if its Alice doing the transaction she is realy her doing it.</p>
 </li>
 <li>
-<p>Double spending. -</p>
+<p>Double spending. -   The thing with digital token transfer money can be replicated. so you need to ensure once a token has been spent cannot  be  spent again.</p>
+</li>
+<li>
+<p>Equivocate -Once a spend happens it cannot be retaken back.</p>
+</li>
+</ol>
+<h5 id="what-features-we-want-in-a-decentralised-cryptocurrency"><a class="header" href="#what-features-we-want-in-a-decentralised-cryptocurrency">What features we want in a decentralised cryptocurrency?</a></h5>
+<p>a.) Anyone can use it - permissionless
+b.) Authoratative transfer - No double spending
+c.)  cant undo spends - Tamper proof</p>
+<div style="break-before: page; page-break-before: always;"></div><p><img src="Blockchain/image.png" alt="quiz" /></p>
+<h1 id="what-is-blockchain-transaction"><a class="header" href="#what-is-blockchain-transaction">what is Blockchain Transaction</a></h1>
+<p>A <em>Transaction</em> , is any operation that involves the transfer of data or value from one party to another .</p>
+<p>i.e</p>
+<ol>
+<li>
+<p><em>Sending cryptocurrency</em>: When someone sends Bitcoin (or another cryptocurrency) to someone else, this action creates a transaction.</p>
+</li>
+<li>
+<p><em>Paying bills</em>: If someone pays bills using cryptocurrency, this payment is recorded as a transaction on the blockchain.</p>
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cryptocurrency"><a class="header" href="#cryptocurrency">Cryptocurrency</a></h1>
